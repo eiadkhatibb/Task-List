@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!-- the document can contain any combination of characters from any language, -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- to specify the compatibility mode of the page for Internet Explorer (IE) browser. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- to control the behavior of the page's layout when viewed on a mobile device. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+    integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM"
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>task-list</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <div id="main" class="card">
+                <div class="card-content">
+                   <span class="card-title">task list</span>
+                   <div class="row">
+                    <form id="task-form">
+                    <div class="input-field col s12">
+                        <input type="text" name="task" id="task">
+                        <label for="task"> New Task</label>
+                    </div>
+                    <input type="submit" value="Add Task" class="btn">
+                    </form>
+                   </div>
+                </div>
+                <div class="card-action">
+                    <h5 id="task-title">task</h5>
+                    <div class="input-field col s12">
+                        <input type="text" name="filter" id="filter">
+                        <label for="filter"> Filter Tasks</label>
+                    </div>
+                    <ul class="collection"></ul>
+                    <a href="" class="clear-tasks btn black">Clear Tasks</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
